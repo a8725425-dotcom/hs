@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cache-bridge
+    runtime: php
+    buildCommand: ""
+    startCommand: "php -S 0.0.0.0:10000"
+    envVars:
+      - key: PHP_MEMORY_LIMIT
+        value: 256M
